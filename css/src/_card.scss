@@ -26,7 +26,7 @@
 
 
     &.card--supervisor {
-        --image-url: url('./images/icon-supervisor.svg');
+        --image-url: url('../images/icon-supervisor.svg');
         border-color: hsl($clr-primary-cyan);
         grid-area: 2 / 1 / 4 / 2;
 
@@ -36,7 +36,7 @@
     }
 
     &.card--team {
-        --image-url: url('./images/icon-team-builder.svg');
+        --image-url: url('../images/icon-team-builder.svg');
         border-color: hsl($clr-primary-red);
         grid-area: 1 / 2 / 3 / 3;
 
@@ -46,7 +46,7 @@
     }
 
     &.card--karma {
-        --image-url: url('./images/icon-karma.svg');
+        --image-url: url('../images/icon-karma.svg');
         border-color: hsl($clr-primary-orange);
         grid-area: 3 / 2 / 5 / 3;
 
@@ -56,7 +56,7 @@
     }
 
     &.card--calculator {
-        --image-url: url('./images/icon-calculator.svg');
+        --image-url: url('../images/icon-calculator.svg');
         border-color: hsl($clr-primary-blue);
         grid-area: 2 / 3 / 4 / 4;
 
