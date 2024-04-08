@@ -1,0 +1,64 @@
+body {
+    font: {
+        size: $fs-normal;
+        family: 'Poppins', sans-serif;
+        weight: 400;
+    };
+    color: hsl($clr-neutral-800);
+    background: hsl($clr-neutral-600);
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 5rem 10rem;
+
+    @include media-breakpoint-down($desktop) {
+        padding: 2.5rem 5rem;
+    }
+
+    @include media-breakpoint-down($tablet) {
+        padding: 5.3rem 2rem;
+    }
+}
+
+body, main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2, p {
+    margin-block: 0;
+}
+
+h1 {
+    font: {
+        weight: 300;
+        size: $fs-large;
+    };
+    line-height: normal;
+    margin-bottom: $spacing-small;
+
+    span {
+        font-weight: 600;
+        letter-spacing: .25px;
+    }
+
+    @include media-breakpoint-down($desktop) {
+        font-size: 1.5rem;
+    }
+}
+
+h2 {
+    font: {
+        weight: 600;
+        size: $fs-medium;
+    };
+    line-height: normal;
+    margin-bottom: $spacing-xs;
+}
+
+p {
+    line-height: 1.67;
+    opacity: .5;
+    letter-spacing: .104px;
+}

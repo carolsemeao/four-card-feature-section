@@ -1,0 +1,67 @@
+.card {
+    background: #FFF;
+    box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.50);
+    border-radius: .5rem;
+    padding: $spacing-large;
+    border-top: 4px solid;
+    display: flex;
+    flex-direction: column;
+
+
+    p {
+        letter-spacing: .09px;
+    }
+
+    &::after {
+        content: var(--image-url, '');
+        display: flex;
+        flex: 1 1 auto;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        @include media-breakpoint-down($desktop) {
+            margin-top: 2rem;
+        }
+    }
+
+
+    &.card--supervisor {
+        --image-url: url('/images/icon-supervisor.svg');
+        border-color: hsl($clr-primary-cyan);
+        grid-area: 2 / 1 / 4 / 2;
+
+        @include media-breakpoint-down($desktop) {
+            grid-area: initial;
+        }
+    }
+
+    &.card--team {
+        --image-url: url('/images/icon-team-builder.svg');
+        border-color: hsl($clr-primary-red);
+        grid-area: 1 / 2 / 3 / 3;
+
+        @include media-breakpoint-down($desktop) {
+            grid-area: initial;
+        }
+    }
+
+    &.card--karma {
+        --image-url: url('/images/icon-karma.svg');
+        border-color: hsl($clr-primary-orange);
+        grid-area: 3 / 2 / 5 / 3;
+
+        @include media-breakpoint-down($desktop) {
+            grid-area: initial;
+        }
+    }
+
+    &.card--calculator {
+        --image-url: url('/images/icon-calculator.svg');
+        border-color: hsl($clr-primary-blue);
+        grid-area: 2 / 3 / 4 / 4;
+
+        @include media-breakpoint-down($desktop) {
+            grid-area: initial;
+        }
+    }
+}
