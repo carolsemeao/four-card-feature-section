@@ -184,7 +184,7 @@ p {
   }
 }
 .card.card--supervisor {
-  --image-url: url("/images/icon-supervisor.svg");
+  --image-url: url("./images/icon-supervisor.svg");
   border-color: hsl(180, 62%, 55%);
   grid-area: 2/1/4/2;
 }
@@ -194,7 +194,7 @@ p {
   }
 }
 .card.card--team {
-  --image-url: url("/images/icon-team-builder.svg");
+  --image-url: url("./images/icon-team-builder.svg");
   border-color: hsl(0, 78%, 62%);
   grid-area: 1/2/3/3;
 }
@@ -204,7 +204,7 @@ p {
   }
 }
 .card.card--karma {
-  --image-url: url("/images/icon-karma.svg");
+  --image-url: url("./images/icon-karma.svg");
   border-color: hsl(34, 97%, 64%);
   grid-area: 3/2/5/3;
 }
@@ -214,7 +214,7 @@ p {
   }
 }
 .card.card--calculator {
-  --image-url: url("/images/icon-calculator.svg");
+  --image-url: url("./images/icon-calculator.svg");
   border-color: hsl(212, 86%, 64%);
   grid-area: 2/3/4/4;
 }
